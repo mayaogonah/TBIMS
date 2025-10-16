@@ -1,1 +1,1 @@
-This repository includes publically-avalible data from the Traumatic Brain Injury Model Systems National Data and Statistical Center (https://www.tbindsc.org) and an HTML file ( https://mayaogonah.github.io/TBIMS/) exploring the datasources, created with Quarto.
+This repository includes publically-avalible data from the Traumatic Brain Injury Model Systems National Data and Statistical Center (https://www.tbindsc.org) and an HTML file ( https://mayaogonah.github.io/TBIMS/) exploring the datasource, created with Quarto.
