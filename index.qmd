@@ -48,7 +48,7 @@ palette <- MetBrewer::met.brewer(name = "Benedictus")
 Then, import the the publicly available de-identified dataset from [TBIMS](https://www.tbindsc.org/default.aspx) (Form 1), and save the .csv file to a R studio project (no need to setwd).
 
 ```{r, warning=FALSE, message=FALSE}
-data <- read_csv("TBIMSForm1_Public_20250812.csv")
+data <- read_csv("data/TBIMSForm1_Public_20250812.csv")
 ```
 
 ## Data exploration
@@ -909,7 +909,7 @@ cowplot::plot_grid(drugs, drink, nrow = 2)
 The TBIMS dataset includes a large sample of individuals admitted to inpatient services between 1987-2023. If we wanted a more recent and contemporaneous sample we could restrict the sample to those who sustained an TBI between 2008 and 2023. This would still leave up to 15 years of follow-up and avoiding missingness for the psychiatric variables not introduced until 2007.
 
 ```{r, results='hide', message=FALSE, warning=FALSE}
-data <- read_csv("TBIMSForm1_Public_20250812.csv")
+data <- read_csv("data/TBIMSForm1_Public_20250812.csv")
 
 data_recent <- data %>%
   filter(INJYEAR >= 2008)
@@ -1288,7 +1288,7 @@ cowplot::plot_grid(drink_recent, drugs_recent, nrow = 2)
 Lets now look at the completeness of follow-up. First load the Form 2 data.
 
 ```{r, warning=FALSE, message=FALSE, results='hide'}
-data_long <- read_csv("TBIMSForm2_Public_20250812.csv")
+data_long <- read_csv("data/TBIMSForm2_Public_20250812.csv")
 
 head(data_long)
 ```
